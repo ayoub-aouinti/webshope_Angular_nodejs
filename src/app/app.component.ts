@@ -6,8 +6,7 @@ import { Component } from '@angular/core';
     <app-header></app-header>
     <router-outlet></router-outlet>
      `,
-  styles: []
-})
+ })
 export class AppComponent {
   title = 'store';
 }
