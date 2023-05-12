@@ -1,11 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-filters',
   templateUrl: 'filters.component.html',
 })
 export class FiltersComponent implements OnInit {
- 
+  @Output() showCategory = new EventEmitter<string>();
+  
+  
   categories = ['shoes','sports'];
   
   constructor() {}
@@ -15,4 +17,10 @@ export class FiltersComponent implements OnInit {
     
   }
 
+  onShowCategory(category: string): void{
+    this.showCategory.emit(category);
+  }
+
 }
+
+
