@@ -14,8 +14,7 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-       
-  }
+    }
 
   onColumnsCountChange(colsNum: number): void{
     this.cols = colsNum;
