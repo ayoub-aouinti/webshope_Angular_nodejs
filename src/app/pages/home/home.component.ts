@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
     this.rowHeight = ROWS_HEIGHT[this.cols];
   }
 
-  onShowCategory(newCategory: string) {
+  onShowCategory(newCategory: string): void{
     this.category = newCategory
   }
 
